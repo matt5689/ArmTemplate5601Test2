@@ -4,18 +4,21 @@
   "parameters": {
     "serviceBusNamespaceName1": {
       "type": "string",
+      "defaultValue": "[concat('TestMvc1', uniqueString(resourceGroup().id))]",
       "metadata": {
         "description": "Name of the Service Bus namespace"
       }
     },
     "serviceBusQueueName1": {
       "type": "string",
+      "defaultValue": "[concat('TestMvc1', uniqueString(resourceGroup().id))]",
       "metadata": {
         "description": "Name of the Queue"
       }
     },
     "serviceBusQueueName2": {
       "type": "string",
+      "defaultValue": "[concat('TestMvc1', uniqueString(resourceGroup().id))]",
       "metadata": {
         "description": "Name of the Queue"
       }
