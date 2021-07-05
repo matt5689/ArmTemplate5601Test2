@@ -18,7 +18,7 @@
     },
     "serviceBusQueueName2": {
       "type": "string",
-      "defaultValue": "[concat('TestMvc1', uniqueString(resourceGroup().id))]",
+      "defaultValue": "[concat('TestMvc2', uniqueString(resourceGroup().id))]",
       "metadata": {
         "description": "Name of the Queue"
       }
