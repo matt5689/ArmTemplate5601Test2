@@ -16,13 +16,6 @@
         "description": "Name of the Queue"
       }
     },
-    "serviceBusQueueName2": {
-      "type": "string",
-      "defaultValue": "[concat('TestMvc2', uniqueString(resourceGroup().id))]",
-      "metadata": {
-        "description": "Name of the Queue"
-      }
-    },
     "location": {
       "type": "string",
       "defaultValue": "[resourceGroup().location]",
