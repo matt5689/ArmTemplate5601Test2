@@ -2,7 +2,7 @@
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
-    "serviceBusNamespaceName": {
+    "serviceBusNamespaceName1": {
       "type": "string",
       "metadata": {
         "description": "Name of the Service Bus namespace"
@@ -30,12 +30,12 @@
   },
   "variables": {
     "defaultSASKeyName": "RootManageSharedAccessKey",
-    "authRuleResourceId": "[resourceId('Microsoft.ServiceBus/namespaces/authorizationRules', parameters('serviceBusNamespaceName'), variables('defaultSASKeyName'))]"
+    "authRuleResourceId": "[resourceId('Microsoft.ServiceBus/namespaces/authorizationRules', parameters('serviceBusNamespaceName1'), variables('defaultSASKeyName'))]"
   },
   "resources": [
     {
       "apiVersion": "2017-04-01",
-      "name": "[parameters('serviceBusNamespaceName')]",
+      "name": "[parameters('serviceBusNamespaceName1')]",
       "type": "Microsoft.ServiceBus/namespaces",
       "location": "[parameters('location')]",
       "sku": {
@@ -48,7 +48,7 @@
           "name": "[parameters('serviceBusQueueName1')]",
           "type": "Queues",
           "dependsOn": [
-            "[concat('Microsoft.ServiceBus/namespaces/', parameters('serviceBusNamespaceName'))]"
+            "[concat('Microsoft.ServiceBus/namespaces/', parameters('serviceBusNamespaceName1'))]"
           ],
           "properties": {
             "lockDuration": "PT5M",
@@ -69,8 +69,8 @@
           "name": "[parameters('serviceBusQueueName2')]",
           "type": "Queues",
           "dependsOn": [
-            "[concat('Microsoft.ServiceBus/namespaces/', parameters('serviceBusNamespaceName'))]",
-            "[concat(concat('Microsoft.ServiceBus/namespaces/', parameters('serviceBusNamespaceName')), concat('/Queues/', parameters('serviceBusQueueName1')))]"
+            "[concat('Microsoft.ServiceBus/namespaces/', parameters('serviceBusNamespaceName1'))]",
+            "[concat(concat('Microsoft.ServiceBus/namespaces/', parameters('serviceBusNamespaceName1')), concat('/Queues/', parameters('serviceBusQueueName1')))]"
           ],
           "properties": {
             "lockDuration": "PT5M",
