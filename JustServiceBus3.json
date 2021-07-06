@@ -133,6 +133,10 @@
               "value": "[concat(variables('functionAppName'), '-hostid')]"
             },
             {
+              "name": "ServiceBusConnectionString",
+              "value": "[reference('ServiceBusConnStr')]"
+            },
+            {
               "name": "AzureWebJobsDisableHomepage",
               "value": "true"
             },
