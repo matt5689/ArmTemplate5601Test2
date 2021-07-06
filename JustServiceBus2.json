@@ -64,6 +64,10 @@
     }
   ],
   "outputs": {
+    "TestString": {
+      "type": "string",
+      "value": "TestString568923356"
+    },
     "NamespaceConnectionString": {
       "type": "string",
       "value": "[listkeys(variables('authRuleResourceId'), '2017-04-01').primaryConnectionString]"
