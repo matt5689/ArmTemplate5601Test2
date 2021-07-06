@@ -134,7 +134,7 @@
             },
             {
               "name": "ServiceBusConnectionString",
-              "value": "[reference('ServiceBusConnStr')]"
+              "value": "[parameters('ServiceBusConnStr')]"
             },
             {
               "name": "AzureWebJobsDisableHomepage",
