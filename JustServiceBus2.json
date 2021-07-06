@@ -66,7 +66,7 @@
   "outputs": {
     "TestString": {
       "type": "string",
-      "value": "TestString568923356"
+      "value": "Test2String568923356"
     },
     "NamespaceConnectionString": {
       "type": "string",
