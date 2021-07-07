@@ -22,7 +22,7 @@
       "defaultValue": "dotnet"
     },
     "zipdeployPackageUrl": {
-      "defaultValue": "https://csharpguitar.blob.core.windows.net/elx/csharpguitar-elx.zip",
+      "defaultValue": "https://playground5601stor.blob.core.windows.net/function/app.zip",
       "type": "string"
     }
   },
