@@ -125,7 +125,7 @@
               "value": "[concat(variables('functionAppName'), '-hostid')]"
             },
             {
-              "name": "ServiceBusConnectionString",
+              "name": "ServiceBusConnection",
               "value": "[parameters('ServiceBusConnStr')]"
             },
             {
