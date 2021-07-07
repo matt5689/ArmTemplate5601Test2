@@ -68,6 +68,10 @@
       "type": "string",
       "value": "Test2String568923356"
     },
+    "ServiceBusQueueName": {
+      "type": "string",
+      "value": "[parameters('serviceBusQueueName1')]"
+    },
     "NamespaceConnectionString": {
       "type": "string",
       "value": "[listkeys(variables('authRuleResourceId'), '2017-04-01').primaryConnectionString]"
