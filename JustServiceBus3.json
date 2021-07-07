@@ -106,7 +106,7 @@
             },
             {
               "name": "ServiceBusQueueName",
-              "value": "[parameters('serviceBusQueueName1')]"
+              "value": "[parameters('ServiceBusQueueName')]"
             },
             {
               "name": "AzureWebJobsStorage",
