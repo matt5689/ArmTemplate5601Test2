@@ -121,14 +121,6 @@
               "value": "~3"
             },
             {
-              "name": "BLOB_CONNECTION",
-              "value": "[concat('DefaultEndpointsProtocol=https;AccountName=x', variables('storageAccountName'), ';EndpointSuffix=', environment().suffixes.storage, ';AccountKey=',listKeys(resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountName')), '2019-06-01').keys[0].value)]"
-            },
-            {
-              "name": "TIMER_FUNCTION_GO",
-              "value": "true"
-            },
-            {
               "name": "AzureFunctionsWebHost__hostid",
               "value": "[concat(variables('functionAppName'), '-hostid')]"
             },
@@ -147,6 +139,10 @@
             {
               "name": "FUNCTIONS_WORKER_RUNTIME",
               "value": "[variables('functionWorkerRuntime')]"
+            },
+            {
+              "name": "AddServiceBusQueueMessages",
+              "value": "true"
             }
           ]
         }
