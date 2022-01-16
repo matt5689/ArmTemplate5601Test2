@@ -26,7 +26,7 @@
       "defaultValue": "dotnet"
     },
     "zipdeployPackageUrl": {
-      "defaultValue": "https://deleteapp5601stor.blob.core.windows.net/publish/publish.zip",
+      "defaultValue": "https://github.com/matt5689/ServiceBusScaleDeploy/raw/master/publish.zip",
       "type": "string"
     }
   },
@@ -126,7 +126,7 @@
             },
             {
               "name": "FUNCTIONS_EXTENSION_VERSION",
-              "value": "~3"
+              "value": "~4"
             },
             {
               "name": "AzureFunctionsWebHost__hostid",
