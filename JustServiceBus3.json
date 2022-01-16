@@ -101,8 +101,8 @@
         "siteConfig": {
           "appSettings": [
             {
-              "name": "BLOB_FUNCTION_GO",
-              "value": "true"
+              "name": "LoopCount",
+              "value": "10"
             },
             {
               "name": "ServiceBusQueueName",
