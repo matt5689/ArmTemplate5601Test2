@@ -26,7 +26,7 @@
       "defaultValue": "dotnet"
     },
     "zipdeployPackageUrl": {
-      "defaultValue": "https://playground5601stor.blob.core.windows.net/function/app.zip",
+      "defaultValue": "https://deleteapp5601stor.blob.core.windows.net/publish/publish.zip?sp=r&st=2022-01-16T20:39:29Z&se=2022-01-17T04:39:29Z&spr=https&sv=2020-08-04&sr=b&sig=LDusXqA3FRSWGCDhkUryGRwrFUBKWAjR1Xq6fZ34ztc%3D",
       "type": "string"
     }
   },
